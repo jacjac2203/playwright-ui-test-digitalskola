@@ -34,7 +34,7 @@ module.exports = defineConfig({
   
   /* Configure projects for major browsers */
   projects: [
-    { name: 'setup', testMatch: /.*\.setup\.ts/ },
+    { name: 'setup', testMatch: /.*\.setup\.js/ },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
@@ -43,6 +43,10 @@ module.exports = defineConfig({
       dependencies: ['setup'],
     },
 
+  // {
+  //     name: 'chromium',
+  //     use: { ...devices['Desktop Chrome'] },
+  //   },
 
     // {
     //   name: 'firefox',

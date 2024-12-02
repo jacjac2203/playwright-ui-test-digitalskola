@@ -14,6 +14,7 @@ test.describe('Saucedemo Login Test', () => {
     });
 });
 
+
 test.describe('Saucedemo Cart', () => { 
     test("Add to cart", async ({ page }) => {
         await page.goto("https://www.saucedemo.com/inventory.html");
